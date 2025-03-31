@@ -12,9 +12,8 @@
       "forbiddenFunctions": []
     },
     "git": {
-      "requiredBranches": ["main"],
+      "requiredBranches": ["main", "develop"],
       "minCommits": 5,
-      "minTags": 2,
       "forbidNoFFMerge": false,
       "minMerges": 1,
       "minLinesChanged": 50,

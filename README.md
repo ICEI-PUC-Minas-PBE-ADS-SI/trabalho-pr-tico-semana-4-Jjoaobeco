@@ -8,15 +8,15 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Vitor Vieira Guedes
+- Matricula: 00889182
+- Proposta de projeto escolhida: Diretório de Receitas
+- Breve descrição sobre seu projeto: Um site de receitas 
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img src="/imagens/printcss.png">
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img src="/imagens/printbootsrap.png>

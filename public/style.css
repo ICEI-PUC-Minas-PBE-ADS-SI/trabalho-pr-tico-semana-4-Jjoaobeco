@@ -1,3 +1,179 @@
-body {
-    background-color: aquamarine;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}   
+header{
+    width: 100%;
+    height: 110px;
+    background: url("logo.png") 10px no-repeat;
+    border-bottom: solid 1px rgb(218, 204, 204);
+    background-color: #e7fc9d;
+    display: flex;
+    position: relative;
+}
+
+.botoes {
+    position: absolute;
+    top: 20px;
+    right: 20px;;
+}
+
+ .botoes ul{
+    list-style-type: none;
+}
+
+.botoes ul li{
+    display: inline-block
+}
+
+ .botoes ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    background-color: rgb(215, 237, 148);
+    border-radius: 20%;
+}
+
+ .botoes ul li a:hover{
+    background-color: black;
+    color: white
+}
+
+.pesquisa {
+    position: absolute;
+    top: 40%; /* Move para o meio */
+    left: 30%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição exata */
+    padding: 10px;
+    width: 300px; /* Define uma largura fixa */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Deixa os cantos arredondados */
+}
+
+main{
+    width: 100%;
+    height: 67.5vw; /* Mantém a proporção 16:9 baseada na largura da tela */;
+    background-image: url("/imagens/imagem-principal.png") ;
+    max-height: 675px; /* Garante que não fique muito grande */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: solid 1px rgb(218, 204, 204);
+    display: flex;
+    position: relative;
+}
+
+main h1 {
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 5%;
+    color: #e7fc9d; /* Cor do texto */
+    font-size: 4rem; /* Tamanho do texto */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para melhor leitura */
+}
+
+article{
+    display: flex;
+    justify-content: space-between; /* Distribui os itens igualmente */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 40px 10%; /* Espaço acima do article e margens laterais */
+    background-color:#e7fc9d ;
+}
+.footer{
+    background-color:rgb(215, 237, 148) ;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+.mais-vistas {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Espaço entre as receitas */
+    width: 100%;
+    
+    
+}
+
+.receita {
+    text-align: center; /* Centraliza os textos abaixo das imagens */
+    flex: 1; /* Distribui igualmente o espaço */
+    background-color:rgb(215, 237, 148) ;
+    border-radius: 10%;
+}
+
+.receita img {
+    padding: 10%;
+    width: 200px; /* Garante que todas as imagens tenham o mesmo tamanho */
+    height: auto; /* Mantém a proporção */
+}
+
+@media screen and (max-width:414px){
+header{
+    width: 100%
+}
+
+.botoes ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    background-color: rgb(215, 237, 148);
+    border-radius: 20%;
+}
+.pesquisa{
+
+    display: none;
+}
+main {
+    height: auto;
+    max-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+article {
+    padding: 20px;
+}
+
+.mais-vistas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.receita {
+    width: 90%;
+    padding: 10px;
+    background-color: rgb(215, 237, 148);
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.receita img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
 }

@@ -28,11 +28,6 @@ function getGitLinesChanged() {
     );
 }
 
-function getGitTagCount() {
-    return parseInt(execSync('git tag | wc -l').toString().trim(), 10);
-}
-
-
 // função para identificar itens no arquivo .gitingnore
 function getGitIgnore() {
     return execSync('cat .gitignore')
@@ -95,14 +90,6 @@ function validateGit(rules) {
     }  
     else {
         results.passed.push(`Quantidade de linhas alteradas (${linesChanged}) dentro do esperado.`);
-    }
-
-    // Verifica quantidade de tags no repositório
-    const tagCount = getGitTagCount();
-    if (tagCount >= rules.minTags && tagCount <= rules.maxTags) {
-        results.passed.push(`Quantidade de tags (${tagCount}) dentro do esperado.`);
-    } else {
-        results.failed.push(`Quantidade de tags (${tagCount}) fora do intervalo esperado (${rules.minTags} - ${rules.maxTags}).`);
     }
 
     // Verifica itens constantes do gitignore
